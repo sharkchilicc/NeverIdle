@@ -1,3 +1,27 @@
+## 交作业:
+
+## 一键脚本
+```shell
+bash <(curl -s -L https://gist.githubusercontent.com/Ansen/e45320205faf5786d3282ac880f20bab/raw/onekey-NeverIdle.sh)
+  ```
+![image](https://user-images.githubusercontent.com/103929535/222052608-5f74a8a1-41d5-459b-beb4-b6f7192ccbed.png)
+
+## 完事再执行，
+```shell
+/tmp/NeverIdle -c 12h -m 6 -n 12h
+  ```
+  其中：
+
+-c 指启用 CPU 定期浪费，后面跟随每次浪费的间隔时间。  
+如每 12 小时 23 分钟 34 秒浪费一次，则为 12h23m34s。按照格式填。
+
+-m 指启用浪费的内存量，后面是一个数字，单位为 GiB。  
+启动后会占用对应量的内存，并且保持不会释放，直到手动杀死进程。
+
+-n 指启用网络定期浪费，后面跟随每次浪费的间隔时间。  
+格式同 CPU。会定期执行一次 Ookla Speed Test（还会输出结果哦！）
+###
+###
 # NeverIdle
 
 *我喜欢你，但别删我机，好么？*
